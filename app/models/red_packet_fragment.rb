@@ -1,0 +1,3 @@
+class RedPacketFragment < ApplicationRecord
+
+end

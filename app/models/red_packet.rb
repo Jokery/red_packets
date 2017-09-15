@@ -1,0 +1,3 @@
+class RedPacket < ApplicationRecord
+
+end
