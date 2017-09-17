@@ -30,6 +30,7 @@ class RedPacket < ApplicationRecord
       amount = [ max, amount ].min
     end
 
+    fragment = nil
     self.class.transaction do
       update_attributes!(remain_size: remain_size - 1, remain_amount: remain_amount - amount)
       user.update_attributes!(balance: user.balance + amount)

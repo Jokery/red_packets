@@ -1,0 +1,14 @@
+red_packet_1:
+  id: 1
+  amount: 35
+  size: 6
+  remain_size: 5
+  remain_amount: 30
+  password: 'lSOvl4XN'
+red_packet_2:
+  id: 2
+  amount: 35
+  size: 6
+  remain_size: 1
+  remain_amount: 2.5
+  password: 'lSOvl4XN'
