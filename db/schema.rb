@@ -21,11 +21,16 @@ ActiveRecord::Schema.define(version: 20170915023728) do
   end
 
   create_table "red_packets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "user_id"
     t.decimal "amount", precision: 8, scale: 2
-    t.integer "parts"
+    t.integer "size"
+    t.decimal "remain_amount", precision: 8, scale: 2
+    t.integer "remain_size"
+    t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["created_at"], name: "index_red_packets_on_created_at"
+    t.index ["user_id"], name: "index_red_packets_on_user_id"
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

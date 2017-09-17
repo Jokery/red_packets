@@ -10,6 +10,7 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'grape'
 gem 'grape-rabl'
+gem 'grape-swagger'
 gem 'hashie'
 gem 'rabl'
 # Use sqlite3 as the database for Active Record

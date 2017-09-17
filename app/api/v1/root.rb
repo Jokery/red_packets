@@ -4,5 +4,6 @@ module V1
 
     mount V1::Auth
     mount V1::RedPackets
+    mount V1::RedPacketFragments
   end
 end
